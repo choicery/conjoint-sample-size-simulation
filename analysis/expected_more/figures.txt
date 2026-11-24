@@ -1,0 +1,48 @@
+4384 studies of the reference case
+
+== Figure 1: 8, 12 and 16 tasks (attributes 3, 4, 4 + feature + price), the studies with 2, 3 and 4 options per task;
+   each error measured against the margin of its own design and shown on the scale of 3 options: measured 90% value | margin for 3 options | studies
+    8 tasks, N    50: 11.39 ( 9.52 to 14.14) | 12.34 | 112
+    8 tasks, N   100:  7.98 ( 7.11 to  8.95) |  8.75 | 112
+    8 tasks, N   150:  5.84 ( 5.38 to  6.65) |  7.16 | 104
+    8 tasks, N   250:  5.09 ( 4.41 to  5.58) |  5.57 | 96
+    8 tasks, N   400:  3.86 ( 3.57 to  4.39) |  4.43 | 144
+    8 tasks, N  1000:  2.34 ( 2.10 to  2.58) |  2.87 | 104
+   12 tasks, N    50:  8.82 ( 8.37 to 10.23) |  9.95 | 96
+   12 tasks, N   100:  6.47 ( 5.93 to  7.10) |  7.04 | 96
+   12 tasks, N   150:  5.30 ( 4.71 to  5.89) |  5.76 | 96
+   12 tasks, N   250:  4.30 ( 3.49 to  4.76) |  4.47 | 96
+   12 tasks, N   400:  3.05 ( 2.60 to  3.32) |  3.55 | 144
+   12 tasks, N  1000:  2.01 ( 1.68 to  2.17) |  2.28 | 96
+   16 tasks, N    50:  7.46 ( 6.76 to  8.52) |  8.54 | 112
+   16 tasks, N   100:  5.94 ( 4.93 to  6.42) |  6.04 | 112
+   16 tasks, N   150:  4.37 ( 3.74 to  5.08) |  4.94 | 104
+   16 tasks, N   250:  3.41 ( 2.97 to  3.99) |  3.83 | 96
+   16 tasks, N   400:  2.89 ( 2.59 to  3.19) |  3.04 | 144
+   16 tasks, N  1000:  1.69 ( 1.52 to  1.83) |  1.94 | 104
+
+== Tasks against options: ratio of the mean absolute errors, 50 to 1,000 respondents together
+   16 tasks of 2 against 8 tasks of 3: 0.76 (0.68 to 0.86), 208 studies, 24 populations
+   12 tasks of 2 against 10 tasks of 3: 0.98 (0.87 to 1.09), 208 studies, 24 populations
+   12 tasks of 3 against 8 tasks of 4: 0.95 (0.83 to 1.07), 208 studies, 24 populations
+
+== Figure 2: levels of the priced attribute, 10 tasks of 3 options, 400 respondents: measured 90% value | margin of the calculator | studies
+    2 levels:  4.31 ( 3.84 to  4.88) |  3.92 | 80
+    3 levels:  4.37 ( 3.86 to  5.08) |  4.91 | 80
+    4 levels:  5.20 ( 4.69 to  5.79) |  5.83 | 80
+    5 levels:  5.81 ( 5.12 to  7.10) |  6.71 | 80
+    6 levels:  7.10 ( 6.04 to  7.94) |  7.56 | 80
+    8 levels:  8.40 ( 7.42 to  9.34) |  9.20 | 32
+   10 levels: 10.10 ( 7.99 to 12.53) | 10.81 | 32
+   12 levels: 10.04 ( 8.04 to 11.91) | 12.40 | 32
+   mean absolute error against two levels in the same design, with the same sample size and populations:
+      3 levels: 1.08 (0.94 to 1.23), 128 studies, 40 populations
+      4 levels: 1.39 (1.24 to 1.54), 160 studies, 40 populations
+      5 levels: 1.38 (1.21 to 1.56), 128 studies, 40 populations
+      6 levels: 1.79 (1.59 to 2.00), 160 studies, 40 populations
+
+== Figure 3: share of people who prefer the other level, attributes with two levels: mean absolute error against a level nearly everybody prefers
+   15.9% prefer the other level: 0.94 (0.89 to 0.98), 64 studies, 8 populations
+   29.9% prefer the other level: 1.07 (0.96 to 1.18), 136 studies, 24 populations
+   38.0% prefer the other level: 1.44 (1.24 to 1.68), 72 studies, 8 populations
+   43.7% prefer the other level: 1.70 (1.57 to 1.81), 280 studies, 24 populations

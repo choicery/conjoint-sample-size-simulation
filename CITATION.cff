@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite them as below."
+title: "Conjoint sample size simulation: Data and analysis"
+type: dataset
+authors:
+  - family-names: Bengart
+    given-names: Paul
+    orcid: "https://orcid.org/0000-0002-9169-7442"
+version: "1.0"
+date-released: "2026-11-24"
+license: CC-BY-4.0
+repository-code: "https://github.com/choicery/conjoint-sample-size-simulation"
+url: "https://choicery.ai/blog/conjoint-sample-size-calculator"
+abstract: >-
+  Simulated choice-based conjoint studies, estimated with Hierarchical Bayes, on how many respondents a study needs:
+  the precision of the price premium of a feature from a market simulator, the sampling error of a choice share,
+  and the whole error of a choice share. With the scripts that rebuild the formulas of the sample size calculator
+  on choicery.ai.
+keywords:
+  - conjoint analysis
+  - choice-based conjoint
+  - sample size
+  - Hierarchical Bayes
+  - willingness to pay
+  - simulation
+preferred-citation:
+  type: data
+  title: "Conjoint sample size simulation: Data and analysis"
+  authors:
+    - family-names: Bengart
+      given-names: Paul
+      orcid: "https://orcid.org/0000-0002-9169-7442"
+  year: 2026
+  version: "1.0"
+  publisher:
+    name: Choicery
+  url: "https://github.com/choicery/conjoint-sample-size-simulation"

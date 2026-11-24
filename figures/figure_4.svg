@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" aria-labelledby="sim4-title" role="img" viewBox="0 0 760 246"><rect x="0" y="0" width="760" height="246" fill="#ffffff"></rect>
+<title id="sim4-title">90% margin of the example design with 400 respondents: share of preference 7.7, randomized first choice 8.8, first choice 12.7 percentage points. Best reachable: 5.8, 6.9 and 10.8 percentage points.</title>
+<text fill="#55635f" font-size="17" x="262" y="34">Margin with 400 people, percentage points</text>
+<text fill="#55635f" font-size="17" text-anchor="end" x="760" y="34">Best reachable</text>
+<g fill="#0d1412" font-size="20" font-weight="600"><text x="0" y="84">Share of preference</text><text x="0" y="148">Randomized first choice</text><text x="0" y="212">First choice</text></g>
+<rect fill="#1a9c8d" height="36" rx="6" width="184" x="262" y="58"></rect><rect fill="#7fc4b9" height="36" rx="6" width="212" x="262" y="122"></rect><rect fill="#0d1412" height="36" rx="6" width="305" x="262" y="186"></rect>
+<g fill="#0d1412" font-size="24" font-weight="800"><text x="456" y="85">±7.7</text><text x="484" y="149">±8.8</text><text x="577" y="213">±12.7</text></g>
+<g fill="#55635f" font-size="18" text-anchor="end"><text x="760" y="85">±5.8</text><text x="760" y="149">±6.9</text><text x="760" y="213">±10.8</text></g>
+</svg>

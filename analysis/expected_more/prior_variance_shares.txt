@@ -1,0 +1,193 @@
+prior_variance_runs: 246 runs evaluated, 0 not ok
+cells: 34 | cells whose variants did NOT get identical answers: 0
+
+==============================================================================================================
+1 PRIOR, START VALUE AND LENGTH, 1,000 respondents, four designs, by spread of the people
+
+spread 0.55   [8 cells]
+                                            | share error RMSE | estimation part | means stretched | SD est/true | R-hat Sigma med | runs > 1.10 | ESS min | RLH  | minutes
+   prior 4.0, default length (app default)  |     6.28         |     6.33        |     1.22        |   0.76      |     1.24        |   100%      |     5   | 0.74 |   1.6
+   prior 1.0, default length                |     4.33         |     4.38        |     0.94        |   0.45      |     1.41        |   100%      |     4   | 0.68 |   1.6
+   prior 0.25, default length               |     2.89         |     2.93        |     0.80        |   0.30      |     1.72        |   100%      |     3   | 0.65 |   1.5
+   prior 4.0, start as with 0.25            |     6.18         |     6.22        |     1.22        |   0.76      |     1.28        |   100%      |     6   | 0.74 |   1.6
+   prior 0.25, start as with 4.0            |     2.85         |     2.91        |     0.80        |   0.30      |     1.70        |   100%      |     3   | 0.65 |   1.5
+   prior 4.0, 80,000 + 20,000               |     6.36         |     6.41        |     1.25        |   0.77      |     1.20        |    75%      |     6   | 0.74 |   6.2
+   prior 1.0, 80,000 + 20,000               |     4.54         |     4.59        |     0.96        |   0.46      |     1.21        |   100%      |     6   | 0.68 |   6.2
+
+spread 1.0   [8 cells]
+                                            | share error RMSE | estimation part | means stretched | SD est/true | R-hat Sigma med | runs > 1.10 | ESS min | RLH  | minutes
+   prior 4.0, default length (app default)  |     5.68         |     5.60        |     0.97        |   0.58      |     1.33        |   100%      |     5   | 0.75 |   1.6
+   prior 1.0, default length                |     4.28         |     4.19        |     0.75        |   0.39      |     1.57        |   100%      |     4   | 0.69 |   1.6
+   prior 0.25, default length               |     3.17         |     3.10        |     0.64        |   0.30      |     1.75        |   100%      |     3   | 0.65 |   1.6
+   prior 4.0, start as with 0.25            |     5.73         |     5.66        |     0.97        |   0.58      |     1.33        |   100%      |     5   | 0.75 |   1.6
+   prior 0.25, start as with 4.0            |     3.27         |     3.16        |     0.65        |   0.30      |     1.78        |   100%      |     3   | 0.66 |   1.6
+   prior 4.0, 80,000 + 20,000               |     5.87         |     5.79        |     0.98        |   0.58      |     1.17        |    75%      |     8   | 0.75 |   6.1
+   prior 1.0, 80,000 + 20,000               |     4.55         |     4.47        |     0.77        |   0.40      |     1.28        |   100%      |     5   | 0.70 |   6.0
+
+spread 1.7   [8 cells]
+                                            | share error RMSE | estimation part | means stretched | SD est/true | R-hat Sigma med | runs > 1.10 | ESS min | RLH  | minutes
+   prior 4.0, default length (app default)  |     4.75         |     4.70        |     0.70        |   0.42      |     1.40        |   100%      |     4   | 0.76 |   1.6
+   prior 1.0, default length                |     3.89         |     3.82        |     0.54        |   0.30      |     1.69        |   100%      |     3   | 0.70 |   1.6
+   prior 0.25, default length               |     3.26         |     3.18        |     0.46        |   0.24      |     1.87        |   100%      |     3   | 0.66 |   1.6
+   prior 4.0, start as with 0.25            |     4.83         |     4.78        |     0.70        |   0.42      |     1.35        |   100%      |     5   | 0.76 |   1.7
+   prior 0.25, start as with 4.0            |     3.33         |     3.27        |     0.46        |   0.24      |     1.90        |   100%      |     3   | 0.66 |   1.6
+   prior 4.0, 80,000 + 20,000               |     5.00         |     4.95        |     0.70        |   0.43      |     1.17        |   100%      |     7   | 0.76 |   6.3
+   prior 1.0, 80,000 + 20,000               |     4.03         |     3.97        |     0.55        |   0.30      |     1.32        |   100%      |     5   | 0.70 |   6.3
+
+all three spreads together   [24 cells]
+                                            | share error RMSE | estimation part | means stretched | SD est/true | R-hat Sigma med | runs > 1.10 | ESS min | RLH  | minutes
+   prior 4.0, default length (app default)  |     5.61         |     5.58        |     0.96        |   0.59      |     1.32        |   100%      |     5   | 0.75 |   1.6
+   prior 1.0, default length                |     4.17         |     4.14        |     0.74        |   0.38      |     1.57        |   100%      |     4   | 0.69 |   1.6
+   prior 0.25, default length               |     3.11         |     3.07        |     0.63        |   0.28      |     1.79        |   100%      |     3   | 0.65 |   1.6
+   prior 4.0, start as with 0.25            |     5.61         |     5.59        |     0.96        |   0.59      |     1.31        |   100%      |     5   | 0.75 |   1.6
+   prior 0.25, start as with 4.0            |     3.15         |     3.12        |     0.64        |   0.28      |     1.79        |   100%      |     3   | 0.65 |   1.6
+   prior 4.0, 80,000 + 20,000               |     5.77         |     5.75        |     0.98        |   0.59      |     1.17        |    83%      |     7   | 0.75 |   6.1
+   prior 1.0, 80,000 + 20,000               |     4.38         |     4.35        |     0.76        |   0.39      |     1.28        |   100%      |     5   | 0.69 |   6.1
+
+==============================================================================================================
+2 PRIOR OR START VALUE? (default length; RMSE of a share)
+   spread 0.55 [8 cells]            start as with 4.0 | start as with 0.25
+      prior 4.0    RMSE  6.28 |  6.18      means stretched 1.22 | 1.22
+      prior 0.25   RMSE  2.85 |  2.89      means stretched 0.80 | 0.80
+   spread 1.0 [8 cells]            start as with 4.0 | start as with 0.25
+      prior 4.0    RMSE  5.68 |  5.73      means stretched 0.97 | 0.97
+      prior 0.25   RMSE  3.27 |  3.17      means stretched 0.65 | 0.64
+   spread 1.7 [8 cells]            start as with 4.0 | start as with 0.25
+      prior 4.0    RMSE  4.75 |  4.83      means stretched 0.70 | 0.70
+      prior 0.25   RMSE  3.33 |  3.26      means stretched 0.46 | 0.46
+
+==============================================================================================================
+3 PAIRED COMPARISONS (same answers), 1,000 respondents, four designs
+   spread 0.55:
+      m4 vs d4: RMSE 6.36 vs 6.28 | m4 smaller in 3 of 8 cells | mean difference per cell +0.05 (SE 0.05)
+      m1 vs d1: RMSE 4.54 vs 4.33 | m1 smaller in 3 of 8 cells | mean difference per cell +0.17 (SE 0.10)
+      d1 vs d4: RMSE 4.33 vs 6.28 | d1 smaller in 8 of 8 cells | mean difference per cell -1.77 (SE 0.35)
+      m1 vs m4: RMSE 4.54 vs 6.36 | m1 smaller in 8 of 8 cells | mean difference per cell -1.65 (SE 0.32)
+      d025 vs d4: RMSE 2.89 vs 6.28 | d025 smaller in 8 of 8 cells | mean difference per cell -3.08 (SE 0.64)
+      d4lo vs d4: RMSE 6.18 vs 6.28 | d4lo smaller in 5 of 8 cells | mean difference per cell -0.07 (SE 0.06)
+      d025hi vs d025: RMSE 2.85 vs 2.89 | d025hi smaller in 4 of 8 cells | mean difference per cell -0.05 (SE 0.07)
+   spread 1.0:
+      m4 vs d4: RMSE 5.87 vs 5.68 | m4 smaller in 2 of 8 cells | mean difference per cell +0.15 (SE 0.08)
+      m1 vs d1: RMSE 4.55 vs 4.28 | m1 smaller in 2 of 8 cells | mean difference per cell +0.21 (SE 0.13)
+      d1 vs d4: RMSE 4.28 vs 5.68 | d1 smaller in 8 of 8 cells | mean difference per cell -1.18 (SE 0.36)
+      m1 vs m4: RMSE 4.55 vs 5.87 | m1 smaller in 8 of 8 cells | mean difference per cell -1.12 (SE 0.29)
+      d025 vs d4: RMSE 3.17 vs 5.68 | d025 smaller in 8 of 8 cells | mean difference per cell -2.16 (SE 0.61)
+      d4lo vs d4: RMSE 5.73 vs 5.68 | d4lo smaller in 4 of 8 cells | mean difference per cell +0.04 (SE 0.04)
+      d025hi vs d025: RMSE 3.27 vs 3.17 | d025hi smaller in 2 of 8 cells | mean difference per cell +0.07 (SE 0.05)
+   spread 1.7:
+      m4 vs d4: RMSE 5.00 vs 4.75 | m4 smaller in 4 of 8 cells | mean difference per cell +0.17 (SE 0.15)
+      m1 vs d1: RMSE 4.03 vs 3.89 | m1 smaller in 2 of 8 cells | mean difference per cell +0.12 (SE 0.08)
+      d1 vs d4: RMSE 3.89 vs 4.75 | d1 smaller in 8 of 8 cells | mean difference per cell -0.72 (SE 0.27)
+      m1 vs m4: RMSE 4.03 vs 5.00 | m1 smaller in 8 of 8 cells | mean difference per cell -0.77 (SE 0.28)
+      d025 vs d4: RMSE 3.26 vs 4.75 | d025 smaller in 8 of 8 cells | mean difference per cell -1.27 (SE 0.40)
+      d4lo vs d4: RMSE 4.83 vs 4.75 | d4lo smaller in 3 of 8 cells | mean difference per cell +0.05 (SE 0.06)
+      d025hi vs d025: RMSE 3.33 vs 3.26 | d025hi smaller in 3 of 8 cells | mean difference per cell +0.06 (SE 0.05)
+   spread all:
+      m4 vs d4: RMSE 5.77 vs 5.61 | m4 smaller in 9 of 24 cells | mean difference per cell +0.12 (SE 0.06)
+      m1 vs d1: RMSE 4.38 vs 4.17 | m1 smaller in 7 of 24 cells | mean difference per cell +0.17 (SE 0.06)
+      d1 vs d4: RMSE 4.17 vs 5.61 | d1 smaller in 24 of 24 cells | mean difference per cell -1.23 (SE 0.20)
+      m1 vs m4: RMSE 4.38 vs 5.77 | m1 smaller in 24 of 24 cells | mean difference per cell -1.18 (SE 0.18)
+      d025 vs d4: RMSE 3.11 vs 5.61 | d025 smaller in 24 of 24 cells | mean difference per cell -2.17 (SE 0.35)
+      d4lo vs d4: RMSE 5.61 vs 5.61 | d4lo smaller in 12 of 24 cells | mean difference per cell +0.01 (SE 0.03)
+      d025hi vs d025: RMSE 3.15 vs 3.11 | d025hi smaller in 9 of 24 cells | mean difference per cell +0.03 (SE 0.03)
+
+==============================================================================================================
+4 BY DESIGN, 1,000 respondents (all spreads; RMSE of a share / R-hat Sigma median)
+   a5l5t8o2   [6 cells]  d4 8.24 / 1.62 | d1 5.68 / 1.97 | d025 3.79 / 2.20 | d4lo 8.20 / 1.68 | d025hi 3.84 / 2.21 | m4 8.64 / 1.41 | m1 6.26 / 1.54 | x4 8.41 / 1.10 | x1 6.03 / 1.11
+   a4l4t8o2   [6 cells]  d4 5.87 / 1.28 | d1 4.67 / 1.54 | d025 3.68 / 1.76 | d4lo 5.94 / 1.27 | d025hi 3.81 / 1.68 | m4 5.94 / 1.19 | m1 4.65 / 1.25
+   med        [6 cells]  d4 3.43 / 1.32 | d1 2.75 / 1.45 | d025 2.29 / 1.74 | d4lo 3.41 / 1.34 | d025hi 2.29 / 1.78 | m4 3.40 / 1.13 | m1 2.76 / 1.28 | x4 3.50 / 1.02 | x1 2.68 / 1.04
+   a5l4t12o3  [6 cells]  d4 3.41 / 1.21 | d1 2.82 / 1.57 | d025 2.36 / 1.73 | d4lo 3.39 / 1.25 | d025hi 2.31 / 1.60 | m4 3.43 / 1.13 | m1 2.91 / 1.18
+   a4l3t16o4  [2 cells]  d4 1.20 / 1.05 | d1 1.17 / 1.07 | d025 1.14 / 1.17 | d4lo 1.21 / 1.04 | d025hi 1.14 / 1.09 | m4 1.21 / 1.02 | m1 1.18 / 1.03
+
+==============================================================================================================
+5 MORE RESPONDENTS: does the error keep falling? (spread 1.0; designs med and a5l5t8o2)
+   med: RMSE of a share (estimation part) [cells]
+      prior 4.0, default length (app default)  N 400:  3.83 ( 3.63) [2] | N 1000:  3.12 ( 3.09) [2] | N 2500:  3.51 ( 3.21) [2]
+      prior 1.0, default length                N 400:  3.12 ( 2.87) [2] | N 1000:  2.55 ( 2.50) [2] | N 2500:  3.06 ( 2.74) [2]
+      prior 0.25, default length               N 400:  2.67 ( 2.39) [2] | N 1000:  2.14 ( 2.08) [2] | N 2500:  2.49 ( 2.18) [2]
+      prior 4.0, start as with 0.25            N 400:  3.89 ( 3.64) [2] | N 1000:  3.16 ( 3.13) [2] | N 2500:  3.50 ( 3.20) [2]
+      prior 0.25, start as with 4.0            N 400:  2.94 ( 2.59) [2] | N 1000:  2.12 ( 2.03) [2] | N 2500:  2.63 ( 2.29) [2]
+      prior 4.0, 80,000 + 20,000               N 400:  3.95 ( 3.65) [2] | N 1000:  3.21 ( 3.18) [2] | N 2500:  3.47 ( 3.16) [2]
+      prior 1.0, 80,000 + 20,000               N 400:  3.20 ( 2.88) [2] | N 1000:  2.64 ( 2.57) [2] | N 2500:  2.96 ( 2.65) [2]
+   a5l5t8o2: RMSE of a share (estimation part) [cells]
+      prior 4.0, default length (app default)  N 400:  9.91 ( 9.50) [2] | N 1000:  8.61 ( 8.55) [2] | N 2500:  8.02 ( 8.02) [2]
+      prior 1.0, default length                N 400:  6.78 ( 6.31) [2] | N 1000:  5.93 ( 5.89) [2] | N 2500:  5.08 ( 5.11) [2]
+      prior 0.25, default length               N 400:  5.26 ( 4.82) [2] | N 1000:  3.90 ( 3.94) [2] | N 2500:  2.78 ( 2.87) [2]
+      prior 4.0, start as with 0.25            N 400:  9.64 ( 9.21) [2] | N 1000:  8.62 ( 8.59) [2] | N 2500:  7.88 ( 7.89) [2]
+      prior 0.25, start as with 4.0            N 400:  4.96 ( 4.52) [2] | N 1000:  4.14 ( 4.09) [2] | N 2500:  2.98 ( 3.09) [2]
+      prior 4.0, 80,000 + 20,000               N 400:  9.75 ( 9.38) [2] | N 1000:  8.99 ( 8.94) [2] | N 2500:  8.40 ( 8.40) [2]
+      prior 1.0, 80,000 + 20,000               N 400:  7.06 ( 6.68) [2] | N 1000:  6.70 ( 6.66) [2] | N 2500:  5.74 ( 5.77) [2]
+   both designs: RMSE of a share (estimation part) [cells]
+      prior 4.0, default length (app default)  N 400:  7.51 ( 7.19) [4] | N 1000:  6.48 ( 6.43) [4] | N 2500:  6.19 ( 6.11) [4]
+      prior 1.0, default length                N 400:  5.28 ( 4.90) [4] | N 1000:  4.57 ( 4.53) [4] | N 2500:  4.20 ( 4.10) [4]
+      prior 0.25, default length               N 400:  4.17 ( 3.81) [4] | N 1000:  3.14 ( 3.15) [4] | N 2500:  2.64 ( 2.55) [4]
+      prior 4.0, start as with 0.25            N 400:  7.35 ( 7.00) [4] | N 1000:  6.49 ( 6.46) [4] | N 2500:  6.10 ( 6.02) [4]
+      prior 0.25, start as with 4.0            N 400:  4.08 ( 3.69) [4] | N 1000:  3.29 ( 3.23) [4] | N 2500:  2.81 ( 2.72) [4]
+      prior 4.0, 80,000 + 20,000               N 400:  7.44 ( 7.11) [4] | N 1000:  6.75 ( 6.71) [4] | N 2500:  6.43 ( 6.34) [4]
+      prior 1.0, 80,000 + 20,000               N 400:  5.48 ( 5.15) [4] | N 1000:  5.09 ( 5.05) [4] | N 2500:  4.57 ( 4.49) [4]
+
+==============================================================================================================
+6 REFERENCE: very long chains (per cell: RMSE of a share / means stretched / SD est/true / R-hat Sigma)
+   a5l5t8o2_p0_n1000_s055
+      prior 4.0, default length (app default)   7.51 / 1.19 / 0.61 / 1.59   (2 min)
+      prior 4.0, 80,000 + 20,000                7.51 / 1.21 / 0.64 / 1.43   (6 min)
+      prior 4.0, 400,000 + 100,000              7.69 / 1.22 / 0.63 / 1.10   (54 min)
+      prior 1.0, default length                 4.51 / 0.85 / 0.34 / 1.79   (2 min)
+      prior 1.0, 80,000 + 20,000                5.09 / 0.86 / 0.35 / 1.54   (6 min)
+      prior 1.0, 400,000 + 100,000              5.18 / 0.87 / 0.35 / 1.09   (54 min)
+      prior 0.25, default length                2.93 / 0.67 / 0.20 / 2.38   (2 min)
+   a5l5t8o2_p0_n1000_s100
+      prior 4.0, default length (app default)   8.39 / 0.86 / 0.40 / 1.58   (2 min)
+      prior 4.0, 80,000 + 20,000                9.08 / 0.89 / 0.42 / 1.34   (6 min)
+      prior 4.0, 400,000 + 100,000              9.07 / 0.87 / 0.41 / 1.10   (54 min)
+      prior 1.0, default length                 6.27 / 0.62 / 0.24 / 1.96   (2 min)
+      prior 1.0, 80,000 + 20,000                7.11 / 0.64 / 0.26 / 1.49   (6 min)
+      prior 1.0, 400,000 + 100,000              6.78 / 0.62 / 0.24 / 1.12   (54 min)
+      prior 0.25, default length                4.36 / 0.47 / 0.16 / 2.08   (2 min)
+   med_p0_n1000_s055
+      prior 4.0, default length (app default)   3.56 / 1.19 / 0.81 / 1.17   (2 min)
+      prior 4.0, 80,000 + 20,000                3.54 / 1.18 / 0.80 / 1.10   (6 min)
+      prior 4.0, 400,000 + 100,000              3.51 / 1.18 / 0.79 / 1.02   (51 min)
+      prior 1.0, default length                 2.54 / 0.96 / 0.51 / 1.26   (2 min)
+      prior 1.0, 80,000 + 20,000                2.51 / 0.96 / 0.51 / 1.15   (6 min)
+      prior 1.0, 400,000 + 100,000              2.49 / 0.96 / 0.51 / 1.04   (51 min)
+      prior 0.25, default length                1.86 / 0.85 / 0.39 / 1.68   (2 min)
+   med_p0_n1000_s100
+      prior 4.0, default length (app default)   3.40 / 1.03 / 0.69 / 1.38   (2 min)
+      prior 4.0, 80,000 + 20,000                3.54 / 1.02 / 0.69 / 1.09   (6 min)
+      prior 4.0, 400,000 + 100,000              3.48 / 1.02 / 0.69 / 1.02   (51 min)
+      prior 1.0, default length                 2.82 / 0.83 / 0.50 / 1.41   (2 min)
+      prior 1.0, 80,000 + 20,000                2.84 / 0.83 / 0.50 / 1.27   (6 min)
+      prior 1.0, 400,000 + 100,000              2.85 / 0.84 / 0.50 / 1.05   (51 min)
+      prior 0.25, default length                2.33 / 0.74 / 0.42 / 1.77   (2 min)
+
+==============================================================================================================
+7 CONTROL: design with chains that are fine at the default (a4l3t16o4)
+
+a4l3t16o4, 1,000 respondents   [2 cells]
+                                            | share error RMSE | estimation part | means stretched | SD est/true | R-hat Sigma med | runs > 1.10 | ESS min | RLH  | minutes
+   prior 4.0, default length (app default)  |     1.20         |     1.29        |     0.97        |   0.74      |     1.05        |     0%      |    43   | 0.62 |   1.5
+   prior 1.0, default length                |     1.17         |     1.23        |     0.93        |   0.68      |     1.07        |    50%      |    39   | 0.62 |   1.5
+   prior 0.25, default length               |     1.14         |     1.17        |     0.91        |   0.66      |     1.17        |    50%      |    31   | 0.62 |   1.5
+   prior 4.0, start as with 0.25            |     1.21         |     1.29        |     0.97        |   0.74      |     1.04        |     0%      |    77   | 0.62 |   1.5
+   prior 0.25, start as with 4.0            |     1.14         |     1.17        |     0.91        |   0.66      |     1.09        |    50%      |    45   | 0.62 |   1.6
+   prior 4.0, 80,000 + 20,000               |     1.21         |     1.29        |     0.97        |   0.74      |     1.02        |     0%      |    93   | 0.63 |   5.8
+   prior 1.0, 80,000 + 20,000               |     1.18         |     1.23        |     0.93        |   0.68      |     1.03        |     0%      |    62   | 0.62 |   5.8
+
+==============================================================================================================
+8 SIMILAR OR DIFFERENT PEOPLE (1,000 respondents, four designs; same people scaled, same tasks, same seeds)
+   RMSE of a share: total | sample part (true value of the respondents - population) | estimation part; cells complete in all three spreads
+   prior 4.0, default length (app default)  spread 0.55:  6.28 | 0.70 |  6.33  ||  spread 1.0:  5.68 | 0.89 |  5.60  ||  spread 1.7:  4.75 | 1.02 |  4.70  ||  similar people worse than different people in 8 of 8 cells (mean difference +1.55, SE 0.24)
+   prior 1.0, default length                spread 0.55:  4.33 | 0.70 |  4.38  ||  spread 1.0:  4.28 | 0.89 |  4.19  ||  spread 1.7:  3.89 | 1.02 |  3.82  ||  similar people worse than different people in 7 of 8 cells (mean difference +0.50, SE 0.33)
+   prior 0.25, default length               spread 0.55:  2.89 | 0.70 |  2.93  ||  spread 1.0:  3.17 | 0.89 |  3.10  ||  spread 1.7:  3.26 | 1.02 |  3.18  ||  similar people worse than different people in 3 of 8 cells (mean difference -0.26, SE 0.26)
+   prior 4.0, start as with 0.25            spread 0.55:  6.18 | 0.70 |  6.22  ||  spread 1.0:  5.73 | 0.89 |  5.66  ||  spread 1.7:  4.83 | 1.02 |  4.78  ||  similar people worse than different people in 8 of 8 cells (mean difference +1.42, SE 0.27)
+   prior 0.25, start as with 4.0            spread 0.55:  2.85 | 0.70 |  2.91  ||  spread 1.0:  3.27 | 0.89 |  3.16  ||  spread 1.7:  3.33 | 1.02 |  3.27  ||  similar people worse than different people in 4 of 8 cells (mean difference -0.38, SE 0.30)
+   prior 4.0, 80,000 + 20,000               spread 0.55:  6.36 | 0.70 |  6.41  ||  spread 1.0:  5.87 | 0.89 |  5.79  ||  spread 1.7:  5.00 | 1.02 |  4.95  ||  similar people worse than different people in 7 of 8 cells (mean difference +1.43, SE 0.33)
+   prior 1.0, 80,000 + 20,000               spread 0.55:  4.54 | 0.70 |  4.59  ||  spread 1.0:  4.55 | 0.89 |  4.47  ||  spread 1.7:  4.03 | 1.02 |  3.97  ||  similar people worse than different people in 7 of 8 cells (mean difference +0.55, SE 0.31)
+   by design, app default (prior 4.0, default length): total RMSE at each spread [cells]
+      a5l5t8o2   spread 0.55:  8.94 [2] | spread 1.0:  8.61 [2] | spread 1.7:  7.04 [2]
+      a4l4t8o2   spread 0.55:  6.56 [2] | spread 1.0:  5.84 [2] | spread 1.7:  5.14 [2]
+      med        spread 0.55:  4.33 [2] | spread 1.0:  3.12 [2] | spread 1.7:  2.60 [2]
+      a5l4t12o3  spread 0.55:  4.04 [2] | spread 1.0:  3.31 [2] | spread 1.7:  2.75 [2]
+
+minutes per run (estimation): {'d025': 1.6, 'd025hi': 1.6, 'd1': 1.6, 'd4': 1.6, 'd4lo': 1.6, 'm1': 6.0, 'm4': 6.1, 'x1': 52.5, 'x4': 52.3}

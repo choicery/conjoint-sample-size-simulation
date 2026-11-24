@@ -1,0 +1,71 @@
+Formula fitted to runs_fit (1,608 runs, 67 designs)
+  fitted:  b = 4.287 * r^-0.571   v = 4992 * r^-0.813   k90 = 1.652   k95 = 2.009
+  rounded: b = 4.3 * r^-0.57   v = 5000 * r^-0.81   k90 = 1.65   k95 = 2.0
+  quantiles of the error with the rounded formula: 90% 1.648   95% 2.005
+  example design (levels 3, 4, 4, 3, 5; 10 tasks; 3 options; r = 1.43): +-8 needs 335 respondents at 90% and 1016 at 95%; limit of the design +-5.8
+
+Share of choice shares inside the margin of the rounded formula   runs       90%       95%
+Runs the formula was built from
+  150 people                                                  536     89.7%     94.8%
+  400 people                                                  536     90.1%     95.0%
+  1,000 people                                                536     90.2%     94.9%
+Test runs the formula has not seen
+  50 people                                                   536     90.2%     94.9%
+  100 people                                                  536     90.4%     95.2%
+  250 people                                                  536     90.1%     94.5%
+  Example design, 12 new populations                          120     93.0%     96.7%
+  3 new designs, 8 populations each                           144     90.4%     95.0%
+      m3343t13o4                                               48     89.5%     93.4%
+      m3435t11o3                                               48     93.4%     97.9%
+      m544354t8o3                                              48     88.4%     93.7%
+  Populations estimated from 18 real studies                  432     90.8%     95.3%
+  Earlier simulation with more varied people                1,608     92.8%     96.6%
+Test runs at the edges of the range (generator populations)
+  many_attributes, 5 designs                                  240     88.8%     94.5%
+      a10l3t12o3                                               48     86.2%     92.9%
+      a12l2t12o3                                               48     88.7%     93.6%
+      a9l4t10o3                                                48     89.2%     95.7%
+      m222233344t16o3                                          48     93.0%     97.2%
+      m3333444455t16o4                                         48     87.2%     93.2%
+  six_levels, 3 designs                                       144     92.8%     96.4%
+      a4l6t12o3                                                48     92.7%     96.6%
+      m34662t10o4                                              48     92.4%     95.6%
+      m6334t8o3                                                48     93.3%     97.1%
+  three_attributes, 6 designs                                 288     93.2%     96.9%
+      a3l3t8o3                                                 48     93.8%     97.6%
+      a3l4t6o2                                                 48     94.0%     96.5%
+      a3l5t8o2                                                 48     94.6%     98.0%
+      m223t6o2                                                 48     91.8%     95.8%
+      m234t10o3                                                48     91.8%     96.4%
+      m345t12o3                                                48     93.4%     96.9%
+  two_levels, 6 designs                                       288     93.3%     96.9%
+      a4l2t8o2                                                 48     95.3%     97.5%
+      a6l2t8o3                                                 48     91.1%     95.3%
+      m22233344t12o2                                           48     94.7%     97.7%
+      m223344t12o3                                             48     93.3%     97.0%
+      m23242t10o3                                              48     92.2%     96.5%
+      m2345t8o2                                                48     93.2%     97.6%
+
+Real studies, by design (runs_real_study_populations)
+  studies with two-level attributes                           288     91.2%     95.4%
+  studies with three attributes                                48     94.2%     96.9%
+  studies with a six-level attribute                          120     90.0%     94.6%
+  studies with more than eight attributes                      72     85.4%     91.1%
+      study_01 (levels 3 2 4 3 2 2 3 2 2)                      24     85.6%     92.1%
+      study_02 (levels 5 4 3 2 5)                              24     89.2%     94.1%
+      study_03 (levels 3 4 4 3 3 4)                            24     86.5%     93.1%
+      study_04 (levels 2 2 2 2 2 2 2 2 2 2 2 4)                24     85.6%     90.4%
+      study_05 (levels 3 2 4 4 2 4 6 6 6)                      24     85.1%     90.9%
+      study_06 (levels 5 5 5 5 6)                              24     86.9%     92.1%
+      study_07 (levels 3 2 3 4)                                24     91.5%     96.3%
+      study_08 (levels 2 3 3 2 2 6)                            24     94.1%     96.9%
+      study_09 (levels 2 3 3 3 6)                              24     94.2%     98.2%
+      study_10 (levels 6 4 3 3 5)                              24     89.8%     94.7%
+      study_11 (levels 4 3 5 3)                                24     87.3%     94.6%
+      study_12 (levels 2 2 3 4)                                24     93.3%     97.6%
+      study_13 (levels 2 2 2 2 2 4)                            24     94.1%     97.5%
+      study_14 (levels 2 2 5)                                  24     93.5%     95.8%
+      study_15 (levels 3 3 4 4 4)                              24     94.0%     98.8%
+      study_16 (levels 2 2 2 2 2 2)                            24     95.5%     97.9%
+      study_17 (levels 3 2 2 2 3 4)                            24     93.5%     97.3%
+      study_18 (levels 4 4 4)                                  24     95.1%     97.9%

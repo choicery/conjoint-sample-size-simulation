@@ -1,0 +1,20 @@
+768 studies, 2304 premiums
+
+== 1 Inside the margin, by design (new sample sizes together; range: populations drawn again, 5% to 95%)
+    8 tasks of 2:  89.6% (84.4 to 93.8) of  96 premiums -> borderline   || N 250:  89.6%, measured 90% ± 6.0 against ± 6.0
+    8 tasks of 3:  90.3% (85.7 to 94.4) of 288 premiums -> holds   || N 50:  88.5%, measured 90% ±13.7 against ±12.3 | N 100:  91.7%, measured 90% ± 7.8 against ± 8.7 | N 250:  90.6%, measured 90% ± 5.5 against ± 5.6
+    8 tasks of 4:  95.5% (91.3 to 99.0) of 288 premiums -> holds   || N 50:  92.7%, measured 90% ±10.2 against ±11.8 | N 100:  96.9%, measured 90% ± 5.7 against ± 8.4 | N 250:  96.9%, measured 90% ± 4.0 against ± 5.3
+   10 tasks of 3:  91.7% (86.5 to 95.8) of  96 premiums -> holds   || N 250:  91.7%, measured 90% ± 4.4 against ± 4.9
+   12 tasks of 2:  89.9% (85.4 to 94.1) of 288 premiums -> borderline   || N 50:  87.5%, measured 90% ±11.2 against ±10.7 | N 100:  92.7%, measured 90% ± 6.9 against ± 7.6 | N 250:  89.6%, measured 90% ± 4.8 against ± 4.8
+   12 tasks of 3:  93.8% (90.6 to 96.5) of 288 premiums -> holds   || N 50:  96.9%, measured 90% ± 7.0 against ± 9.9 | N 100:  90.6%, measured 90% ± 6.8 against ± 7.0 | N 250:  93.8%, measured 90% ± 3.9 against ± 4.5
+   12 tasks of 4:  92.7% (88.5 to 96.5) of 288 premiums -> holds   || N 50:  94.8%, measured 90% ± 8.2 against ± 9.5 | N 100:  92.7%, measured 90% ± 5.5 against ± 6.8 | N 250:  90.6%, measured 90% ± 4.0 against ± 4.3
+   16 tasks of 2:  89.2% (84.7 to 93.4) of 288 premiums -> borderline   || N 50:  88.5%, measured 90% ± 9.9 against ± 9.2 | N 100:  88.5%, measured 90% ± 6.8 against ± 6.5 | N 250:  90.6%, measured 90% ± 3.8 against ± 4.1
+   16 tasks of 3:  94.8% (91.0 to 98.3) of 288 premiums -> holds   || N 50:  95.8%, measured 90% ± 6.6 against ± 8.5 | N 100:  92.7%, measured 90% ± 5.7 against ± 6.0 | N 250:  95.8%, measured 90% ± 3.1 against ± 3.8
+   16 tasks of 4:  92.7% (87.5 to 96.9) of  96 premiums -> holds   || N 250:  92.7%, measured 90% ± 3.1 against ± 3.7
+
+== 2 By respondents and all together
+   N   50:  92.1% (89.0 to 94.8) of 672 premiums | mean error / margin 0.43
+   N  100:  92.3% (89.1 to 95.4) of 672 premiums | mean error / margin 0.44
+   N  250:  92.2% (89.3 to 94.7) of 960 premiums | mean error / margin 0.43
+   all:     92.2% (90.3 to 94.1) of 2304 premiums | all three premiums of a study inside: 84.4% of 768 studies
+   sides: true premium below the lower end 4.5% | above the upper end 3.3%

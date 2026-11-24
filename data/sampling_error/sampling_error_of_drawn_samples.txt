@@ -1,0 +1,69 @@
+1112 stored runs, 520 different samples, 29500 different shares (10780 of the six main markets)
+products per market: {2: np.int64(4160), 3: np.int64(1700), 4: np.int64(1420), 5: np.int64(2080)}
+
+== 1 RMSE of the sampling error of a share (points), six main markets | in brackets RMSE x sqrt(N) | data sets
+   homogeneous (0.55)   N 50: 3.06 (21.6)  24 | N 100: 2.35 (23.5)  24 | N 200: 1.67 (23.6)  24 | N 400: 1.19 (23.7)  32 | N 1000: 0.65 (20.7)  28 | N 2500: 0.40 (20.1)   8
+   typical (1.0)        N 50: 4.26 (30.1)  24 | N 100: 3.20 (32.0)  24 | N 200: 2.25 (31.8)  24 | N 400: 1.63 (32.6)  72 | N 1000: 0.96 (30.2)  48 | N 2500: 0.56 (28.2)  24 | N 5000: 0.43 (30.5)  24
+   heterogeneous (1.7)  N 50: 5.04 (35.6)  24 | N 100: 3.76 (37.6)  24 | N 200: 2.63 (37.2)  24 | N 400: 1.86 (37.3)  32 | N 1000: 1.02 (32.2)  28 | N 2500: 0.69 (34.7)   8
+   all markets (main and further):
+   homogeneous (0.55)   N 50: 3.16 (22.3) | N 100: 2.27 (22.7) | N 200: 1.56 (22.0) | N 400: 1.18 (23.7) | N 1000: 0.64 (20.3) | N 2500: 0.41 (20.7)
+   typical (1.0)        N 50: 4.40 (31.1) | N 100: 3.15 (31.5) | N 200: 2.14 (30.2) | N 400: 1.59 (31.8) | N 1000: 0.95 (30.2) | N 2500: 0.56 (28.1) | N 5000: 0.42 (29.5)
+   heterogeneous (1.7)  N 50: 5.18 (36.6) | N 100: 3.75 (37.5) | N 200: 2.52 (35.6) | N 400: 1.88 (37.6) | N 1000: 1.05 (33.3) | N 2500: 0.69 (34.6)
+
+== 2 Does the sampling error follow 1 / sqrt(N)? Slope of log RMSE on log N (theory: -0.50), all markets
+   homogeneous (0.55)   slope -0.525 over N 50 to 2500
+   typical (1.0)        slope -0.518 over N 50 to 5000
+   heterogeneous (1.7)  slope -0.522 over N 50 to 2500
+
+== 3 h = sampling variance as a share of the classic poll variance P(1-P)/N, by size of the true share (all markets)
+   share of the product     homogeneous (0.55) |        typical (1.0) |  heterogeneous (1.7) |  shares
+   (0.0, 0.1]             h 0.219 (RMSExsqrtN  9.2) | h 0.430 (RMSExsqrtN 14.6) | h 0.618 (RMSExsqrtN 19.5) |   5845
+   (0.1, 0.2]             h 0.337 (RMSExsqrtN 20.5) | h 0.519 (RMSExsqrtN 25.5) | h 0.636 (RMSExsqrtN 28.7) |   5492
+   (0.2, 0.3]             h 0.368 (RMSExsqrtN 26.3) | h 0.583 (RMSExsqrtN 33.0) | h 0.715 (RMSExsqrtN 36.6) |   4981
+   (0.3, 0.4]             h 0.380 (RMSExsqrtN 29.3) | h 0.582 (RMSExsqrtN 36.3) | h 0.747 (RMSExsqrtN 41.1) |   3884
+   (0.4, 0.5]             h 0.373 (RMSExsqrtN 30.3) | h 0.580 (RMSExsqrtN 37.8) | h 0.729 (RMSExsqrtN 42.3) |   2965
+   (0.5, 0.7]             h 0.392 (RMSExsqrtN 30.6) | h 0.608 (RMSExsqrtN 38.1) | h 0.751 (RMSExsqrtN 42.4) |   3682
+   (0.7, 1.0]             h 0.375 (RMSExsqrtN 21.8) | h 0.627 (RMSExsqrtN 31.2) | h 0.698 (RMSExsqrtN 34.9) |   2651
+   pooled h:            homogeneous (0.55): 0.359 | typical (1.0): 0.573 | heterogeneous (1.7): 0.715
+   pooled RMSE x sqrt(N): homogeneous (0.55): 22.2 | typical (1.0): 30.6 | heterogeneous (1.7): 36.1   (a share of 50% in a poll: 50.0)
+
+== 4 h by design and by number of products (does the market matter?), all markets
+   homogeneous (0.55)   designs: 0.169 to 0.393 (8) | populations x designs: 10% 0.240, median 0.359, 90% 0.469 (28) | products: 2: 0.395, 3: 0.347, 4: 0.367, 5: 0.324
+   typical (1.0)        designs: 0.419 to 0.729 (12) | populations x designs: 10% 0.408, median 0.552, 90% 0.769 (48) | products: 2: 0.614, 3: 0.593, 4: 0.564, 5: 0.518
+   heterogeneous (1.7)  designs: 0.444 to 0.741 (8) | populations x designs: 10% 0.547, median 0.693, 90% 0.846 (28) | products: 2: 0.757, 3: 0.670, 4: 0.730, 5: 0.684
+
+== 5 Coverage: share of the sampling errors inside the margin (target 90% with k = 1.65, 95% with k = 1.96)
+   formula with the share  k x sqrt(h P(1-P)/N)
+      homogeneous (0.55)   90%: 92.4%  95%: 96.0%   by N (90%): 50:  92 100:  92 200:  93 400:  91 1000:  94 2500:  94
+      typical (1.0)        90%: 91.2%  95%: 95.7%   by N (90%): 50:  90 100:  91 200:  92 400:  90 1000:  92 2500:  94 5000:  92
+      heterogeneous (1.7)  90%: 90.7%  95%: 95.2%   by N (90%): 50:  90 100:  89 200:  91 400:  90 1000:  93 2500:  93
+   one number per group   k x c / sqrt(N)
+      homogeneous (0.55)   90%: 89.3%  95%: 93.1%   by N (90%): 50:  89 100:  89 200:  90 400:  87 1000:  92 2500:  91
+      typical (1.0)        90%: 89.7%  95%: 94.0%   by N (90%): 50:  88 100:  90 200:  91 400:  88 1000:  90 2500:  91 5000:  91
+      heterogeneous (1.7)  90%: 90.0%  95%: 94.5%   by N (90%): 50:  89 100:  89 200:  91 400:  88 1000:  93 2500:  90
+   for a share of 50%     k x sqrt(h x 0.25/N)
+      homogeneous (0.55)   90%: 95.8%  95%: 97.9%   by N (90%): 50:  96 100:  95 200:  96 400:  95 1000:  97 2500:  97
+      typical (1.0)        90%: 94.9%  95%: 97.6%   by N (90%): 50:  95 100:  94 200:  95 400:  94 1000:  95 2500:  97 5000:  96
+      heterogeneous (1.7)  90%: 94.2%  95%: 97.3%   by N (90%): 50:  94 100:  93 200:  95 400:  93 1000:  96 2500:  96
+   shares of 30% or more, one number per group: homogeneous (0.55): 81.8% | typical (1.0): 83.5% | heterogeneous (1.7): 85.0%
+   shares of 30% or more, formula with the share: homogeneous (0.55): 90.0% | typical (1.0): 89.5% | heterogeneous (1.7): 89.7%
+   the calculator's own constants (h = 0.351 / 0.563 / 0.719), formula with the share
+      homogeneous (0.55)   90%: 92.1%  95%: 95.8%   shares of 30% or more: 89.6%   by N (90%): 50:  92 100:  91 200:  93 400:  91 1000:  94 2500:  93
+      typical (1.0)        90%: 90.9%  95%: 95.5%   shares of 30% or more: 89.1%   by N (90%): 50:  90 100:  90 200:  92 400:  90 1000:  91 2500:  94 5000:  92
+      heterogeneous (1.7)  90%: 90.8%  95%: 95.3%   shares of 30% or more: 89.8%   by N (90%): 50:  90 100:  89 200:  91 400:  90 1000:  93 2500:  93
+
+== 6 Respondents for a margin (90%), from the formula; and the margin at fixed sample sizes
+   a) one number per group (average over the shares of a market)
+      homogeneous (0.55)   ±5:    54 | ±4:    84 | ±3:   149 | ±2:   335 | ±1.5:   596 | ±1:  1340   ||   N 50: ±5.2 | N 100: ±3.7 | N 200: ±2.6 | N 400: ±1.8 | N 1000: ±1.2
+      typical (1.0)        ±5:   103 | ±4:   160 | ±3:   285 | ±2:   640 | ±1.5:  1137 | ±1:  2557   ||   N 50: ±7.2 | N 100: ±5.1 | N 200: ±3.6 | N 400: ±2.5 | N 1000: ±1.6
+      heterogeneous (1.7)  ±5:   142 | ±4:   222 | ±3:   395 | ±2:   887 | ±1.5:  1577 | ±1:  3547   ||   N 50: ±8.4 | N 100: ±6.0 | N 200: ±4.2 | N 400: ±3.0 | N 1000: ±1.9
+   b) for a share of 50% (largest sampling error)
+      homogeneous (0.55)   ±5:    98 | ±4:   153 | ±3:   272 | ±2:   611 | ±1.5:  1085 | ±1:  2442   ||   N 50: ±7.0 | N 100: ±4.9 | N 200: ±3.5 | N 400: ±2.5 | N 1000: ±1.6
+      typical (1.0)        ±5:   156 | ±4:   244 | ±3:   434 | ±2:   975 | ±1.5:  1733 | ±1:  3899   ||   N 50: ±8.8 | N 100: ±6.2 | N 200: ±4.4 | N 400: ±3.1 | N 1000: ±2.0
+      heterogeneous (1.7)  ±5:   195 | ±4:   305 | ±3:   541 | ±2:  1217 | ±1.5:  2162 | ±1:  4865   ||   N 50: ±9.9 | N 100: ±7.0 | N 200: ±4.9 | N 400: ±3.5 | N 1000: ±2.2
+      classic poll (h = 1)  ±5:   273 | ±4:   426 | ±3:   757 | ±2:  1702 | ±1.5:  3025 | ±1:  6807   ||   N 50: ±11.7 | N 100: ±8.2 | N 200: ±5.8 | N 400: ±4.1 | N 1000: ±2.6
+
+== 7 How firm are h and c? Whole populations x designs drawn again with replacement (2,000 times), 5% to 95%
+   homogeneous (0.55)   h 0.359 (0.334 to 0.383)   c 22.2 (21.4 to 22.9)   28 populations x designs
+   typical (1.0)        h 0.573 (0.545 to 0.603)   c 30.6 (29.9 to 31.4)   48 populations x designs
+   heterogeneous (1.7)  h 0.715 (0.681 to 0.749)   c 36.1 (35.2 to 36.9)   28 populations x designs

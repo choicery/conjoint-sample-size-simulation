@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif" aria-labelledby="sim3-title" role="img" viewBox="0 0 760 340"><rect x="0" y="0" width="760" height="340" fill="#ffffff"></rect>
+<title id="sim3-title">Worth of one task in CBC tasks, measured on choice shares: dual-response CBC 1.38 (90% range 1.33 to 1.43), best-worst CBC 1.83 (1.76 to 1.91), best-worst CBC with None 2.25 (2.15 to 2.37).</title>
+<text fill="#55635f" font-size="17" x="262" y="34">One task counts as this many CBC tasks</text>
+<text fill="#55635f" font-size="17" text-anchor="end" x="760" y="34">90% range</text>
+<g fill="#0d1412" font-size="20" font-weight="600"><text x="0" y="84">CBC</text><text x="0" y="148">Dual-response</text><text x="0" y="212">Best-worst</text><text x="0" y="276">Best-worst with None</text></g>
+<rect fill="#c9d6d1" height="36" rx="6" width="133" x="262" y="58"></rect><rect fill="#1a9c8d" height="36" rx="6" width="183" x="262" y="122"></rect><rect fill="#1a9c8d" height="36" rx="6" width="244" x="262" y="186"></rect><rect fill="#1a9c8d" height="36" rx="6" width="300" x="262" y="250"></rect>
+<g fill="#0d1412" font-size="24" font-weight="800"><text x="405" y="85">1</text><text x="455" y="149">1.38</text><text x="516" y="213">1.83</text><text x="572" y="277">2.25</text></g>
+<g fill="#55635f" font-size="18" text-anchor="end"><text x="760" y="85">reference</text><text x="760" y="149">1.33 to 1.43</text><text x="760" y="213">1.76 to 1.91</text><text x="760" y="277">2.15 to 2.37</text></g>
+<text fill="#0f6f64" font-size="19" x="0" y="328">10 best-worst tasks carry about as much as 18 CBC tasks.</text>
+</svg>

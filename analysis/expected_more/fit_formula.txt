@@ -1,0 +1,129 @@
+reference case: 3544 studies, 10632 premiums | designs 17 | levels [np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(8), np.int64(10), np.int64(12)] | respondents [np.int64(50), np.int64(100), np.int64(150), np.int64(400), np.int64(1000), np.int64(2000)]
+   by setting: clearly better: 2744 studies | better for most: 328 studies | matter of taste: 472 studies
+   (the design is named by tasks x options and by the utilities it would have with a priced attribute of two levels)
+
+== 1 Fit
+   one exponent for the levels                              -2 log L   -57939.0   parameters 8    AIC   -57923.0
+   own exponent for 'matter of taste'                       -2 log L   -57957.7   parameters 9    AIC   -57939.7
+   and two factors for 'matter of taste' (comparison only)  -2 log L   -57958.8   parameters 10   AIC   -57938.8   (B x 0.00, sqrt(V) x 1.78)
+   used: one factor for matter of taste, own exponent for its levels
+   comparison, every option counted fully (exponent 1): -2 log L   -57870.3, that is 87.4 worse; lowest design inside the 90% point: 74%, with the fitted exponent 86%
+   r = tasks x (options - 1)^0.188 / utilities
+   B = 0.00321 x r^-1.083      V = 0.1359 x r^-1.062
+   levels: (levels / 2)^0.435, for matter of taste (levels / 2)^0.144
+   better for most: x 1.116      matter of taste: x 1.721
+   rounded for the calculator: {'a': 0.19, 'b0': 0.0032, 'pb': 1.08, 'v0': 0.136, 'pv': 1.06, 'c': 0.43, 'c_split': 0.14, 'most': 1.12, 'split': 1.72}
+
+== 2 The 90% point of |error| / MAE with the rounded constants: 2.037 (95% point 2.476); mean of |error| / MAE 1.001
+   factor that brings the 90% point of every design under K: 1.102 (set by 8x2, 20 utilities, 288 premiums)
+   factor that brings the 90% point of every setting x levels under K: 1.086 (set by ('split', np.int64(4)), 192 premiums)
+   K = 2.037 x 1.105 = 2.25
+
+== 3 Inside the margin K x MAE (K = 2.25), reference case
+   all:  93.0% of 10632 premiums (3544 studies; all three of a study  85.7%) | mean error / MAE 1.00
+   by setting
+      clearly better      92.9% of  8232 premiums (2744 studies; all three of a study  85.9%) | mean error / MAE 1.00
+      better for most     93.2% of   984 premiums ( 328 studies; all three of a study  85.7%) | mean error / MAE 1.00
+      matter of taste     93.3% of  1416 premiums ( 472 studies; all three of a study  84.5%) | mean error / MAE 1.00
+   by levels of the priced attribute
+      2                   93.1% of  7464 premiums (2488 studies; all three of a study  85.8%) | mean error / MAE 1.00
+      3                   92.4% of   576 premiums ( 192 studies; all three of a study  83.3%) | mean error / MAE 0.97
+      4                   92.0% of   864 premiums ( 288 studies; all three of a study  85.4%) | mean error / MAE 1.04
+      5                   92.5% of   576 premiums ( 192 studies; all three of a study  85.4%) | mean error / MAE 0.95
+      6                   93.3% of   864 premiums ( 288 studies; all three of a study  86.8%) | mean error / MAE 1.04
+      8                   92.7% of    96 premiums (  32 studies; all three of a study  81.2%) | mean error / MAE 1.08
+      10                  90.6% of    96 premiums (  32 studies; all three of a study  81.2%) | mean error / MAE 1.04
+      12                  96.9% of    96 premiums (  32 studies; all three of a study  93.8%) | mean error / MAE 0.84
+   by respondents
+      50                  93.3% of   432 premiums ( 144 studies; all three of a study  86.1%) | mean error / MAE 1.01
+      100                 93.5% of   432 premiums ( 144 studies; all three of a study  86.8%) | mean error / MAE 0.99
+      150                 93.2% of  1896 premiums ( 632 studies; all three of a study  86.4%) | mean error / MAE 0.99
+      400                 92.8% of  4920 premiums (1640 studies; all three of a study  85.1%) | mean error / MAE 1.01
+      1000                93.0% of  2712 premiums ( 904 studies; all three of a study  86.4%) | mean error / MAE 0.99
+      2000                92.1% of   240 premiums (  80 studies; all three of a study  82.5%) | mean error / MAE 1.04
+   by options per task
+      2                   93.3% of  2880 premiums ( 960 studies; all three of a study  86.5%) | mean error / MAE 0.99
+      3                   92.5% of  5928 premiums (1976 studies; all three of a study  84.8%) | mean error / MAE 1.01
+      4                   94.0% of  1824 premiums ( 608 studies; all three of a study  87.5%) | mean error / MAE 0.98
+   by tasks
+      6                   94.1% of   768 premiums ( 256 studies; all three of a study  88.3%) | mean error / MAE 1.02
+      8                   93.3% of  2304 premiums ( 768 studies; all three of a study  86.8%) | mean error / MAE 0.97
+      10                  92.4% of  4728 premiums (1576 studies; all three of a study  84.4%) | mean error / MAE 1.01
+      12                  93.8% of  1008 premiums ( 336 studies; all three of a study  87.2%) | mean error / MAE 0.97
+      16                  93.0% of  1824 premiums ( 608 studies; all three of a study  85.7%) | mean error / MAE 1.02
+   by design (ratio r of the new formula for a priced attribute with two levels)
+      6x2, 30 utilities          r 0.20   95.5% of   288 premiums (  96 studies; all three of a study  91.7%) | mean error / MAE 0.98
+      6x3, 30 utilities          r 0.23   92.7% of   192 premiums (  64 studies; all three of a study  85.9%) | mean error / MAE 1.06
+      6x2, 20 utilities          r 0.30   93.8% of   288 premiums (  96 studies; all three of a study  86.5%) | mean error / MAE 1.03
+      8x2, 20 utilities          r 0.40   89.9% of   288 premiums (  96 studies; all three of a study  82.3%) | mean error / MAE 1.10
+      8x2, 16 utilities          r 0.50   93.8% of   336 premiums ( 112 studies; all three of a study  87.5%) | mean error / MAE 0.96
+      10x3, 16 utilities         r 0.71   95.1% of   144 premiums (  48 studies; all three of a study  87.5%) | mean error / MAE 0.96
+      8x2, 10 utilities          r 0.80   93.3% of  1008 premiums ( 336 studies; all three of a study  86.0%) | mean error / MAE 0.99
+      8x3, 10 utilities          r 0.91   94.9% of   336 premiums ( 112 studies; all three of a study  90.2%) | mean error / MAE 0.90
+      8x4, 10 utilities          r 0.99   94.3% of   336 premiums ( 112 studies; all three of a study  89.3%) | mean error / MAE 0.89
+      10x3, 10 utilities         r 1.14   92.3% of  4584 premiums (1528 studies; all three of a study  84.3%) | mean error / MAE 1.02
+      12x2, 10 utilities         r 1.20   95.2% of   336 premiums ( 112 studies; all three of a study  88.4%) | mean error / MAE 0.92
+      16x4, 16 utilities         r 1.23   93.8% of   144 premiums (  48 studies; all three of a study  87.5%) | mean error / MAE 0.94
+      12x3, 10 utilities         r 1.37   92.0% of   336 premiums ( 112 studies; all three of a study  84.8%) | mean error / MAE 1.03
+      12x4, 10 utilities         r 1.48   94.3% of   336 premiums ( 112 studies; all three of a study  88.4%) | mean error / MAE 0.95
+      16x2, 10 utilities         r 1.60   91.7% of   336 premiums ( 112 studies; all three of a study  83.9%) | mean error / MAE 0.99
+      16x3, 10 utilities         r 1.83   92.0% of   336 premiums ( 112 studies; all three of a study  83.9%) | mean error / MAE 1.05
+      16x4, 10 utilities         r 1.97   93.8% of  1008 premiums ( 336 studies; all three of a study  86.6%) | mean error / MAE 1.03
+   by setting and levels
+      clearly better    2 levels   93.0% of  6216 premiums (2072 studies; all three of a study  86.1%) | mean error / MAE 1.00
+      clearly better    3 levels   92.7% of   384 premiums ( 128 studies; all three of a study  84.4%) | mean error / MAE 0.98
+      clearly better    4 levels   92.5% of   480 premiums ( 160 studies; all three of a study  86.9%) | mean error / MAE 1.04
+      clearly better    5 levels   91.9% of   384 premiums ( 128 studies; all three of a study  84.4%) | mean error / MAE 0.95
+      clearly better    6 levels   92.5% of   480 premiums ( 160 studies; all three of a study  85.6%) | mean error / MAE 1.06
+      clearly better    8 levels   92.7% of    96 premiums (  32 studies; all three of a study  81.2%) | mean error / MAE 1.08
+      clearly better   10 levels   90.6% of    96 premiums (  32 studies; all three of a study  81.2%) | mean error / MAE 1.04
+      clearly better   12 levels   96.9% of    96 premiums (  32 studies; all three of a study  93.8%) | mean error / MAE 0.84
+      better for most   2 levels   93.6% of   408 premiums ( 136 studies; all three of a study  84.6%) | mean error / MAE 1.01
+      better for most   3 levels   92.7% of    96 premiums (  32 studies; all three of a study  84.4%) | mean error / MAE 0.95
+      better for most   4 levels   91.7% of   192 premiums (  64 studies; all three of a study  84.4%) | mean error / MAE 0.99
+      better for most   5 levels   93.8% of    96 premiums (  32 studies; all three of a study  90.6%) | mean error / MAE 0.88
+      better for most   6 levels   93.8% of   192 premiums (  64 studies; all three of a study  87.5%) | mean error / MAE 1.05
+      matter of taste   2 levels   93.7% of   840 premiums ( 280 studies; all three of a study  84.6%) | mean error / MAE 1.00
+      matter of taste   3 levels   90.6% of    96 premiums (  32 studies; all three of a study  78.1%) | mean error / MAE 0.94
+      matter of taste   4 levels   91.1% of   192 premiums (  64 studies; all three of a study  82.8%) | mean error / MAE 1.07
+      matter of taste   5 levels   93.8% of    96 premiums (  32 studies; all three of a study  84.4%) | mean error / MAE 1.01
+      matter of taste   6 levels   94.8% of   192 premiums (  64 studies; all three of a study  89.1%) | mean error / MAE 0.98
+   cells of design x respondents x setting x levels with at least 90 premiums and under 85% inside:
+      8x2, 20 utilities, N 400, clearly better, 2 levels:  81.2% of 96
+      1 of 73 such cells; cells under 90%: 9; lowest 81.2%
+   by design, exactly: lowest 89.93% (8x2, 20 utilities, 259 of 288), highest 95.49%
+   sides: true premium below the lower end  3.3% | above the upper end  3.8%   by setting: clearly better 3.1% / 4.0% | better for most 4.1% / 2.7% | matter of taste 3.7% / 3.0%
+
+== 4 With one design left out of the fit
+   a) constants and 90% point from the other designs, the safety factor as above | b) the safety factor from the other designs as well
+      6x2, 30 utilities          a)  96.2%   b)  95.8% (K 2.24)   of  288 premiums | exponent of the options 0.19
+      6x3, 30 utilities          a)  92.2%   b)  92.7% (K 2.27)   of  192 premiums | exponent of the options 0.22
+      6x2, 20 utilities          a)  93.8%   b)  93.8% (K 2.26)   of  288 premiums | exponent of the options 0.19
+      8x2, 20 utilities          a)  89.6%   b)  88.9% (K 2.20)   of  288 premiums | exponent of the options 0.18
+      8x2, 16 utilities          a)  93.8%   b)  93.8% (K 2.25)   of  336 premiums | exponent of the options 0.20
+      10x3, 16 utilities         a)  95.1%   b)  95.1% (K 2.24)   of  144 premiums | exponent of the options 0.18
+      8x2, 10 utilities          a)  93.4%   b)  93.3% (K 2.24)   of 1008 premiums | exponent of the options 0.21
+      8x3, 10 utilities          a)  94.9%   b)  94.9% (K 2.24)   of  336 premiums | exponent of the options 0.17
+      8x4, 10 utilities          a)  94.3%   b)  94.3% (K 2.24)   of  336 premiums | exponent of the options 0.14
+      10x3, 10 utilities         a)  91.4%   b)  92.0% (K 2.28)   of 4584 premiums | exponent of the options 0.21
+      12x2, 10 utilities         a)  95.8%   b)  95.5% (K 2.24)   of  336 premiums | exponent of the options 0.22
+      16x4, 16 utilities         a)  93.8%   b)  93.8% (K 2.24)   of  144 premiums | exponent of the options 0.18
+      12x3, 10 utilities         a)  92.0%   b)  92.0% (K 2.24)   of  336 premiums | exponent of the options 0.19
+      12x4, 10 utilities         a)  94.6%   b)  94.9% (K 2.25)   of  336 premiums | exponent of the options 0.17
+      16x2, 10 utilities         a)  91.7%   b)  91.7% (K 2.24)   of  336 premiums | exponent of the options 0.19
+      16x3, 10 utilities         a)  92.0%   b)  92.0% (K 2.25)   of  336 premiums | exponent of the options 0.18
+      16x4, 10 utilities         a)  92.5%   b)  91.9% (K 2.23)   of 1008 premiums | exponent of the options 0.20
+   lowest: a) 89.6%, b) 88.9% | designs under 90%: a) 1, b) 1 of 17 | exponent of the options between 0.14 and 0.22
+
+== 5 Outside the reference case, with the margin of the new formula (the calculator does not know these conditions)
+   step worth about 8%, weak reaction to price                     64.2% of   864 premiums ( 288 studies; all three of a study  38.9%) | mean error / MAE 2.01
+   step worth about 28% of the price range, typical reaction to price  74.4% of   336 premiums ( 112 studies; all three of a study  53.6%) | mean error / MAE 1.66
+   step worth about 28% of the price range, weak reaction to price  16.7% of    48 premiums (  16 studies; all three of a study   0.0%) | mean error / MAE 4.44
+   38% prefer the other level, with the setting 'better for most': 87.0% of 216 premiums inside | with 'matter of taste': 98.6%
+
+== 6 Examples: margin at 400 respondents | respondents for ±5% of the price range (attribute with the levels shown)
+   example of the calculator: 3, 4, 4, 3 + price, 10 tasks of 3; the attribute with 4 levels: clearly better ± 5.6, 499 | better for most ± 6.2, 631 | matter of taste ± 7.8, 1023
+   the same design, a feature with 2 levels: clearly better ± 4.1, 271 | better for most ± 4.6, 341 | matter of taste ± 7.1, 832
+   12 tasks of 2, same attributes, 4 levels: clearly better ± 5.4, 471 | better for most ± 6.1, 596 | matter of taste ± 7.6, 962
+   16 tasks of 4, same attributes, 4 levels: clearly better ± 4.1, 273 | better for most ± 4.6, 343 | matter of taste ± 5.8, 545
+   6 tasks of 2, 30 utilities, 2 levels: clearly better ±10.6, 4605 | better for most ±11.8, 11986 | matter of taste ±18.2, None
