@@ -12,7 +12,7 @@ and the scripts that rebuild the numbers of the article from them.
    the share in the target group, only because of who takes part. The estimation adds an error of its own. Its size
    is documented in `FINDINGS.md`.
 
-License: CC BY 4.0 (Creative Commons Attribution 4.0 International) for all files, see `LICENSE.txt`. You may share and
+License: CC BY 4.0 (Creative Commons Attribution 4.0 International) for all files, see [LICENSE](LICENSE). You may share and
 adapt them if you give appropriate credit.
 
 ## How to cite
